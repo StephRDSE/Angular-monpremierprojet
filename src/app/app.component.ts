@@ -1,4 +1,4 @@
-import { Component, Testability } from '@angular/core';
+import { Component, Testability} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +21,13 @@ testOver(evenement) {
   console.log(evenement.target);
 }
 changeText(e) {
-    console.log('saisie : ' + e.target.value);
+    console.log('saisie : ', e.target.value);
+   }
+changeText1(text) {
+  console.log('coucou : ', text);
+  this.user.name = text;
 }
-
+logInputValue(val) {
+  console.log('la valeur saisie dans le champ texte coucou est :', val);
+}
 }
